@@ -6,9 +6,18 @@
         xmlns:local="clr-namespace:Ark"
         mc:Ignorable="d"
         Title="Arc" 
-        Height="450"
-        Width="800">
+        Height="720"
+        Width="1280"
+        Background="#16191C">
     <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
         
+        <Border Background="#1F2327"
+                BorderThickness="0"/>
+
     </Grid>
 </Window>

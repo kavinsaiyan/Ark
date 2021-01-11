@@ -4,9 +4,10 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>Logo_Gradient.ico</ApplicationIcon>
+    <ApplicationIcon>logo_gradient_1r5_2.ico</ApplicationIcon>
+    <Win32Resource></Win32Resource>
   </PropertyGroup>
-
+  
   <ItemGroup>
     <Folder Include="Model\" />
     <Folder Include="ViewModel\" />
