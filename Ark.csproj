@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -10,11 +10,17 @@
     <Company>Welch Engines</Company>
     <Version>0.0.1</Version>
   </PropertyGroup>
-  
+
   <ItemGroup>
-    <Folder Include="Model\" />
-    <Folder Include="Resources\Images\" />
-    <Folder Include="ViewModel\" />
+    <None Remove="Resources\Images\Bible_Light.png" />
+    <None Remove="Resources\Images\Music_Light.png" />
+    <None Remove="Resources\Images\Table_Light.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\Bible_Light.png" />
+    <Resource Include="Resources\Images\Music_Light.png" />
+    <Resource Include="Resources\Images\Table_Light.png" />
   </ItemGroup>
 
 </Project>

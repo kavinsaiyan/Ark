@@ -5,8 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Ark.View"
              mc:Ignorable="d" 
-             d:DesignHeight="720"
-             d:DesignWidth="1280">
+             d:DesignHeight="625"
+             d:DesignWidth="1180">
     <Grid>
         <!-- Grid Layout -->
         <Grid.ColumnDefinitions>
@@ -33,14 +33,13 @@
                  
                  VerticalContentAlignment="Center"
                  VerticalAlignment="Bottom"
-                 HorizontalAlignment="Center"
-                 
-                 BorderThickness="0"
+                 HorizontalAlignment="Stretch"
                  
                  Text="Search"
                  Padding="30 0 0 0"
                  
-                 Width="525"
+                 MinWidth="300"
+                 MaxWidth="525"
                  Height="121"
                  
                  Margin="0 0 0 10"/>
@@ -53,11 +52,12 @@
                  Grid.Row="1"
                  BorderThickness="0"
                  VerticalAlignment="Top"
-                 HorizontalAlignment="Center"
+                 HorizontalAlignment="Stretch"
                  
-                 Width="525"
-                 Height="450"
-                 MaxHeight="600"
+                 MinWidth="300"
+                 MaxWidth="525"
+                 MinHeight="200"
+                 MaxHeight="450"
                  
                  Margin="0 9 0 0">
 
@@ -74,5 +74,42 @@
         </ListBox>
         <!-- Song List -->
         
+        <TextBox x:Name="songTitle"
+                 Grid.Column="1"
+                 Style="{StaticResource songSearchStyle}"
+                 
+                 VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Center"
+                 VerticalAlignment="Bottom"
+                 HorizontalAlignment="Stretch"
+                 
+                 Text="Title"
+                 FontFamily="Gontserrat"
+                 FontSize="60"
+                 Padding="0 0 0 25"
+                 
+                 MinWidth="300"
+                 MaxWidth="1000"
+                 Height="121"
+                 
+                 Margin="40 0 100 10"/>
+        
+        <TextBox x:Name="songAUthor"
+                 Grid.Column="1"
+                 Style="{StaticResource songSearchStyle}"
+                 
+                 VerticalContentAlignment="Top"
+                 HorizontalContentAlignment="Center"
+                 VerticalAlignment="Bottom"
+                 HorizontalAlignment="Center"
+                 
+                 Text="Author"
+                 
+                 MinWidth="300"
+                 MaxWidth="1000"
+                 Height="30"
+                 Margin="40 0 100 23"/>
+
+
     </Grid>
 </UserControl>

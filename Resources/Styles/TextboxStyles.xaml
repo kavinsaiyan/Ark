@@ -9,5 +9,10 @@
         <Setter Property="Background" Value="{DynamicResource _containerDark}"/>
        
     </Style>
+    <Style x:Key="songInfo" TargetType="TextBox">
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Foreground" Value="{DynamicResource _contentLight}"/>
+        <Setter Property="Background" Value="{DynamicResource _containerDark}"/>
 
+    </Style>
 </ResourceDictionary>

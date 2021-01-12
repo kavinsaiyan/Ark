@@ -16,7 +16,6 @@
     <Style x:Key="songListItemStyle" TargetType="ListBoxItem">
         <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
         <Setter Property="Height" Value="50"/>
-        
         <Setter Property="Template">
             <Setter.Value>
 
@@ -47,6 +46,49 @@
             </Setter.Value>
         </Setter>
         
+    </Style>
+    
+    <!-- ListBox for Nav List -->
+    <Style x:Key="navListStyle" TargetType="ListBox">
+        <Setter Property="Background" Value="{DynamicResource _containerLight}"/>
+        <Setter Property="Foreground" Value="{DynamicResource _contentLight}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+
+    </Style>
+
+    <!-- ListBox Item for Nav List-->
+    <Style x:Key="navListItemStyle" TargetType="ListBoxItem">
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property="Height" Value="75"/>
+        <Setter Property="Template">
+            <Setter.Value>
+
+                <ControlTemplate TargetType="ListBoxItem">
+                    <Border Name="Border" SnapsToDevicePixels="true" Cursor="Hand">
+                        <ContentPresenter />
+                    </Border>
+                    <ControlTemplate.Triggers>
+
+                        <Trigger Property="IsSelected" Value="true">
+                            <Setter TargetName="Border" Property="Background" Value="{DynamicResource _primaryBlue}"/>
+                            <Setter TargetName="Border" Property="Cursor" Value="Arrow"/>
+                            <Setter Property="Foreground" Value="{DynamicResource _contentLight}"/>
+                        </Trigger>
+
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsSelected" Value="False"/>
+                                <Condition Property="IsMouseOver" Value="True"/>
+                            </MultiTrigger.Conditions>
+
+                        </MultiTrigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
     </Style>
     
 </ResourceDictionary>
