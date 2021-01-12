@@ -6,8 +6,10 @@
         xmlns:local="clr-namespace:Ark"
         mc:Ignorable="d"
         Title="Arc" 
-        Height="720"
+        MinHeight="300"
+        MinWidth="500"
         Width="1280"
+        Height="720"
         Background="#16191C">
     <Grid>
 
@@ -15,9 +17,18 @@
             <ColumnDefinition Width="100"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         
         <Border Background="#1F2327"
-                BorderThickness="0"/>
+                BorderThickness="0"
+                Grid.RowSpan="3"/>
+        
+        
 
     </Grid>
 </Window>

@@ -1,0 +1,30 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Ark.Resources.Styles">
+
+    <!-- Neutrals From Dark to Light -->
+    <Color x:Key="backgroundColor">#16191C</Color>
+    <Color x:Key="containerDark">#1F2327</Color>
+    <Color x:Key="containerLight">#292E33</Color>
+    <Color x:Key="contentGrey">#7E8082</Color>
+    <Color x:Key="contentLight">#FFFFFF</Color>
+    
+    <!-- Primary Colors -->
+    <Color x:Key="primaryBlue">#235DDA</Color>
+    <Color x:Key="redColor">#DE4E4E</Color>
+    <Color x:Key="orangeColor">#DE9E4E</Color>
+    <Color x:Key="greenColor">#4EDE67</Color>
+    
+    <!-- Neutrals From Dark to Light -->
+    <SolidColorBrush x:Key="_backgroundColor" Color="#16191C"/>
+    <SolidColorBrush x:Key="_containerDark" Color="#1F2327"/>
+    <SolidColorBrush x:Key="_containerLight" Color="#292E33"/>
+    <SolidColorBrush x:Key="_contentGrey" Color="#7E8082"/>
+    <SolidColorBrush x:Key="_contentLight" Color="#FFFFFF"/>
+
+    <SolidColorBrush x:Key="_primaryBlue" Color="#235DDA"/>
+    <SolidColorBrush x:Key="_redColor" Color="#DE4E4E"/>
+    <SolidColorBrush x:Key="_orangeColor" Color="#DE9E4E"/>
+    <SolidColorBrush x:Key="_greenColor" Color="#4EDE67"/>
+
+</ResourceDictionary>

@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="Ark.View.SongLibrary"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Ark.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="720"
+             d:DesignWidth="1280">
+    <Grid>
+        <!-- Grid Layout -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="23*"/>
+        </Grid.RowDefinitions>
+        <!-- Grid Layout -->
+        
+        <!-- Background - will not be needed soon -->
+        <Rectangle Fill="{DynamicResource _backgroundColor}"
+                Grid.ColumnSpan="2"
+                Grid.RowSpan="2"/>
+        <!-- Background - will not be needed soon -->
+
+        <!-- Song Search Box-->
+        <TextBox x:Name="songSearchBox"
+                 
+                 Style="{StaticResource songSearchStyle}"
+                 
+                 VerticalContentAlignment="Center"
+                 VerticalAlignment="Bottom"
+                 HorizontalAlignment="Center"
+                 
+                 BorderThickness="0"
+                 
+                 Text="Search"
+                 Padding="30 0 0 0"
+                 
+                 Width="525"
+                 Height="121"
+                 
+                 Margin="0 0 0 10"/>
+        <!-- Song Search Box -->
+        
+        <!-- Song List -->
+        <ListBox x:Name="songListBox"
+                 Style="{StaticResource songListStyle}"
+                 ItemContainerStyle="{StaticResource songListItemStyle}"
+                 Grid.Row="1"
+                 BorderThickness="0"
+                 VerticalAlignment="Top"
+                 HorizontalAlignment="Center"
+                 
+                 Width="525"
+                 Height="450"
+                 MaxHeight="600"
+                 
+                 Margin="0 9 0 0">
+
+            <ListBoxItem>Song Name</ListBoxItem>
+            <ListBoxItem>What A Great Name</ListBoxItem>
+            <ListBoxItem>Another Song</ListBoxItem>
+            <ListBoxItem>Visionary</ListBoxItem>
+            <ListBoxItem>Content</ListBoxItem>
+            <ListBoxItem>Much More Stuff</ListBoxItem>
+            <ListBoxItem>Song 1</ListBoxItem>
+            <ListBoxItem>Song 2</ListBoxItem>
+            <ListBoxItem>Song 3</ListBoxItem>
+
+        </ListBox>
+        <!-- Song List -->
+
+    </Grid>
+</UserControl>
